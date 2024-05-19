@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane prefHeight="289.0" prefWidth="406.0" stylesheets="@../styles/AddCandy.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controllers.AddCandyController">
+    <children>
+        <VBox alignment="CENTER" layoutX="128.0" layoutY="155.0" spacing="10.0">
+            <TextField fx:id="candyIdField" promptText="Введіть ID цукерки" />
+            <Button onAction="#handleAddButton" text="Додати до подарунку">
+            <styleClass>
+               <String fx:value="record-sales" />
+               <String fx:value="add_candy_button_text" />
+               <String fx:value="record-sales-add-button" />
+            </styleClass></Button>
+        </VBox>
+        <VBox id="candy_info_vbox" alignment="CENTER" layoutY="248.0" prefHeight="18.0" prefWidth="406.0">
+            <children>
+                <Label id="candy_info" fx:id="statusLabel" alignment="CENTER" styleClass="added_candy_info_text" />
+            </children>
+        </VBox>
+        <VBox layoutX="-1.0" prefHeight="67.0" prefWidth="406.0" styleClass="sweets_container" stylesheets="@../styles/AddCandy.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="add_candy_text" text="Додати цукерку до подарунку" textAlignment="CENTER" />
+            <FontAwesomeIconView fill="#14b44c" glyphName="PLUS" size="2.5em" />
+            </children>
+        </VBox>
+      <Label contentDisplay="CENTER" layoutX="135.0" layoutY="129.0" prefHeight="16.0" prefWidth="134.0" styleClass="enter_candy_id_text" text="Введіть ID цукерки" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="129.0" />
+    </children>
+</AnchorPane>

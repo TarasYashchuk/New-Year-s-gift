@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Ubuntu&display=swap');
+
+.menu_container {
+    -fx-background-color: #EEEEEE;
+}
+
+/*Logo container styles */
+.menu_logo_container{
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+
+.menu_logo_container Text{
+    -fx-font-size: 2em;
+    -fx-fill: #FFFFFF;
+}
+
+.menu_logo_container FontAwesomeIconView {
+-fx-fill: #ECF39E;
+}
+
+.add_candy_button {
+    -fx-padding: 10 10 10 10; /* Задайте відступи для тексту: верхній, правий, нижній, лівий */
+    -fx-translate-x: 25px; /* Зміщення кнопки на 10 пікселів вправо */
+}
+
+.remove_candy_button {
+    -fx-padding: 10 10 10 10; /* Задайте відступи для тексту: верхній, правий, нижній, лівий */
+    -fx-translate-x: 170px; /* Зміщення кнопки на 10 пікселів вправо */
+    -fx-translate-y: -37px; /* Зміщення кнопки на 10 пікселів вправо */
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/FUTURA55REGULAR.TTF')
+}
+
+.candies_list_text{
+    -fx-padding: 17px; /* Встановлення відступу тексту на 10 пікселів */
+    -fx-translate-x: 40px;
+    -fx-translate-y: 10px;
+    -fx-font-size: 20px; /* Задання розміру шрифту */
+    -fx-font-family: "Comfortaa"; /* Задання шрифту */
+}
+
+.calculate_gift_weight_button {
+
+    -fx-padding: 10 10 10 10;
+    -fx-translate-x: 65px;
+    -fx-translate-y: -120px;
+}
+
+.show_sweets_info_button{
+    -fx-padding: 10 10 10 10;
+    -fx-translate-x: 80px;
+    -fx-translate-y: 23px;
+}
+
+.find_candy_by_button{
+    -fx-padding: 10 10 10 10;
+    -fx-translate-x: 105px;
+    -fx-translate-y: 110px;
+}
+
+
+.bevel-grey {
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.record-sales:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #b09508 0%, #837906 100%),
+            #eabd28,
+            #bb9d07,
+            radial-gradient(center 50% 50%, radius 100%, #efb317, #e1c71f);
+}
+
+.record-sales-update-button:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #b09508 0%, #837906 100%),
+            #eabd28,
+            #bb9d07,
+            radial-gradient(center 50% 50%, radius 100%, #efb317, #e1c71f);
+}
+
+.record-sales:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.record-sales Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.sort_candies_button{
+    -fx-padding: 10 10 10 10;
+    -fx-translate-x: 80px;
+    -fx-translate-y: 125px;
+}
+
+.vbox_composition_gift{
+    -fx-border-color: #132A13; /* Колір рамки */
+    -fx-border-width: 5px; /* Ширина рамки */
+}
+
+.update_gift_composition_button{
+    -fx-padding: 3 3 3 3;
+    -fx-translate-x: -85px;
+}
+
+.button_bar{
+    -fx-border-color: #132A13;
+    -fx-border-width: 5px; /* Ширина рамки */
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.gift_candies_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+    -fx-font-size: 13px; /* Розмір шрифту */
+}
+
+.header_text{
+    -fx-font-family: "Comfortaa", sans-serif;
+    -fx-font-size: 20px; /* Розмір шрифту */
+    -fx-font-weight: 400; /* Товщина шрифту */
+}
+
+.find_candy_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.add_candy_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.remove_candy_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.sort_candies_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.info_about_gift_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.calculate_gift_weight_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.update_gift_composition_button_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}

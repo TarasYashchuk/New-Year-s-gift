@@ -1,0 +1,20 @@
+.sweets_container{
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+
+.sweets_container Text{
+    -fx-font-size: 20px;
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.sweets_vbox_list{
+
+}
+
+.sweets_info_text{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comfortaa", sans-serif;
+}

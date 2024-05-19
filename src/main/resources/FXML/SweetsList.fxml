@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" stylesheets="@../styles/SweetsList.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controllers.SweetsListInfoController">
+   <children>
+      <VBox prefHeight="73.0" prefWidth="600.0" styleClass="sweets_container" stylesheets="@../styles/SweetsList.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sweets_container" text="Список солодощів" wrappingWidth="210" />
+             <FontAwesomeIconView fill="#fcfcfc" glyphName="LIST_UL" glyphSize="20" />
+         </children>
+      </VBox>
+      <ScrollPane layoutY="74.0" prefHeight="525.0" prefWidth="400.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="399.0">
+               <children>
+                  <Label fx:id="label" styleClass="sweets_info_text" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

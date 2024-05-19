@@ -1,0 +1,26 @@
+.sweets_container {
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+
+.sort_candies_text{
+    -fx-font-size: 20px;
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.sort_by_sugarcontent_button:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #b09508 0%, #837906 100%),
+            #eabd28,
+            #bb9d07,
+            radial-gradient(center 50% 50%, radius 100%, #efb317, #e1c71f);
+}
+
+.sort_by_sugarcontent_button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.sort_by_sugar_button{
+    -fx-translate-x: 60px;
+}

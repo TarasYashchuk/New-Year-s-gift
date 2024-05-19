@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="menu_container" stylesheets="@../styles/Menu.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controllers.MenuController">
+    <children>
+        <VBox prefHeight="70.0" prefWidth="600.0" styleClass="menu_logo_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header_text" text="Новорічний подарунок">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+               <font>
+                  <Font name="SimSun" size="12.0" />
+               </font>
+                </Text>
+            <FontAwesomeIconView fill="#f2d70d" glyphName="GIFT" size="2.5em" />
+            </children>
+        </VBox>
+        <VBox fx:id="giftBox" layoutY="62.4" prefHeight="338.0" prefWidth="255.0" styleClass="vbox_composition_gift" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="62.0">
+            <children>
+                <VBox prefHeight="46.0" prefWidth="246.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="candies_list_text" text="Ваш подарунок" wrappingWidth="177.54644775390625">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Text>
+                    </children>
+                </VBox>
+                <VBox prefHeight="238.0" prefWidth="247.0">
+                    <children>
+                        <!-- ScrollPane для Label -->
+                        <ScrollPane>
+                            <content>
+                                <Label fx:id="label" styleClass="gift_candies_text" stylesheets="@../styles/Menu.css" text=" " />
+                            </content>
+                        </ScrollPane>
+                        <!-- Кінець ScrollPane -->
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox layoutX="254.0" layoutY="70.0" prefHeight="330.0" prefWidth="346.0" stylesheets="@../styles/Menu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleAddCandyButton" styleClass="add_candy_button_text" stylesheets="@../styles/AddCandy.css" text="Додати цукерку" translateX="117.0">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+               <styleClass>
+                  <String fx:value="add_candy_button" />
+                  <String fx:value="add_candy_button_menu" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" glyphSize="13" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleRemoveCandyButton" prefHeight="0.0" prefWidth="160.0" styleClass="remove_candy_button_text" text="Вилучити цукерку">
+               <styleClass>
+                  <String fx:value="remove_candy_button" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="REMOVE" glyphSize="13" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleSortGift" styleClass="sort_candies_button_text" text="Відсортувати цукерки">
+               <styleClass>
+                  <String fx:value="sort_candies_button" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SORT_AMOUNT_ASC" glyphSize="13" />
+                    </graphic>
+                </Button>
+                <Button id="show_info_button" fx:id="show_info_button" mnemonicParsing="false" onAction="#handleShowButton" styleClass="info_about_gift_button_text" text="Інформація про цукерки">
+               <styleClass>
+                  <String fx:value="show_sweets_info_button" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="INFO_CIRCLE" glyphSize="13" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleFindCandyButton" styleClass="find_candy_button_text" text="Знайти цукерку">
+               <styleClass>
+                  <String fx:value="find_candy_by_button" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" glyphSize="13" />
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleCalculateGiftWeightButton" styleClass="calculate_gift_weight_button" stylesheets="@../styles/Menu.css" text="Порахувати вагу подарунку">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CALCULATOR" glyphSize="13" />
+                    </graphic>
+               <styleClass>
+                  <String fx:value="calculate_gift_weight_button_text" />
+                  <String fx:value="calculate_gift_weight_button" />
+                  <String fx:value="record-sales" />
+               </styleClass>
+                </Button>
+            </children>
+        </VBox>
+        <ButtonBar layoutX="-4.8" layoutY="384.0" prefHeight="40.0" prefWidth="255.0" styleClass="button_bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.topAnchor="360.0">
+            <buttons>
+                <Button id="updateButton" fx:id="updateButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="26.0" prefWidth="95.0" styleClass="update_gift_composition_button_text" text="Оновити">
+               <styleClass>
+                  <String fx:value="update_gift_composition_button" />
+                  <String fx:value="record-sales-update-button" />
+               </styleClass>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="REFRESH" glyphSize="13" />
+                    </graphic>
+                </Button>
+            </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>

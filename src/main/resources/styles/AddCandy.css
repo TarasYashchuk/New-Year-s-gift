@@ -1,0 +1,57 @@
+.sweets_container {
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+
+.sweets_container Text {
+    -fx-font-size: 23px;
+    -fx-fill: #FFFFFF;
+    -fx-font-family: Futura;
+}
+
+.enter_candy_id_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.record-sales:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #b09508 0%, #837906 100%),
+            #eabd28,
+            #bb9d07,
+            radial-gradient(center 50% 50%, radius 100%, #efb317, #e1c71f);
+}
+
+.record-sales-add-button:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #b09508 0%, #837906 100%),
+            #eabd28,
+            #bb9d07,
+            radial-gradient(center 50% 50%, radius 100%, #efb317, #e1c71f);
+}
+
+.record-sales:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.record-sales Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.add_candy_button_text{
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.add_candy_text{
+    -fx-font-family: "Comfortaa", sans-serif;
+    -fx-font-size: 20px;
+}
+
+.added_candy_info_text {
+    -fx-font-family: "Comfortaa", sans-serif;
+}
+
+.add_candy_button_menu{
+    -fx-translate-x: 10px;
+}
