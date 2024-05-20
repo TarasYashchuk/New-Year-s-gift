@@ -1,2 +1,2 @@
 # New-Year-s-gift
-Course work 
+Course work in the discipline "Applied programming" Topic: "New Year's gift"
